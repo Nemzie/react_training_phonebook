@@ -1,0 +1,12 @@
+.u-clear {
+	zoom: 1;
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+	}
+	&:after {
+		clear: both;
+	}
+}

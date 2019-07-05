@@ -1,0 +1,236 @@
+.contact {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.contact-inner, .contact-list {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.contact-head {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 70px;
+  padding: 0 20px;
+
+  h1 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contact-list-item {
+  background: #e3fff8;
+  display: block;
+  padding: 0 20px;
+  position: relative;
+
+  &:hover {
+    background: #5ed1b3 !important;
+  }
+
+  &:nth-child(odd) {
+      background: #b9e7fb;
+  }
+
+  p , h2{
+    margin: 0;
+  }
+}
+
+.contact-item-inner {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%
+}
+
+.contact-details {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: calc(100% - 30px);
+}
+
+
+
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-create {
+  margin-left: auto;
+  display: block;
+}
+
+.btn-delete {
+  display: block;
+}
+
+.btn-trash {
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.btn-edit {
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.ico-create {
+  background: url('../../images/add.png') no-repeat;
+  background-size: contain;
+  display: block;
+  height: 50px;
+  position: relative;
+  width: 50px;
+}
+
+.ico-delete {
+  background: url('../../images/remove.png') no-repeat;
+  background-size: contain;
+  display: block;
+  height: 50px;
+  position: relative;
+  width: 50px;
+}
+
+.ico-trash {
+  background: url('../../images/trash.png') no-repeat;
+  background-size: contain;
+  display: block;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.ico-edit {
+  background: url('../../images/edit.png') no-repeat;
+  background-size: contain;
+  display: block;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.ico-contact {
+  background: url('../../images/phone-book.png') no-repeat;
+  background-size: contain;
+  display: block;
+  height: 30px;
+  position: relative;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.ico-close {
+  background: url('../../images/x-button.png') no-repeat;
+  background-size: contain;
+  display: block;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+
+.modal {
+  background: rgba(#77757f, 0.5);
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0;
+
+
+  &.is-show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+}
+
+.modal-inner {
+  background: #fdeacf;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+  height: 200px;
+}
+
+.modal-head {
+  align-items: center;
+  background: #76bba9;
+  height: 40px;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 10px;
+  position: relative;
+  width: 100%;
+
+  span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+.modal-body, .modal-detail {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.modal-body {
+  padding: 0 10px;
+}
+
+.modal-detail {
+  padding: 20px 0;
+}
+
+.modal-detail-item {
+  align-items: center;
+  margin-bottom: 10px;
+  display: flex;
+  height: 40px;
+  width: 100%;
+
+  input {
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    color: #000;
+  }
+}
+
+
+.modal-lbl {
+  display: block;
+  position: relative;
+  width: 100px;
+}
+
+.modal-input {
+  border: 1px solid #276884;
+  display: block;
+  position: relative;
+  height: 35px;
+  width: calc(100% - 100px);
+}
