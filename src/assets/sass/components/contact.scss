@@ -90,6 +90,19 @@
   width: 30px;
 }
 
+.btn-save {
+  color: #fff;
+  border-radius: 3px;
+  background: #34b9f5;
+  margin-left: auto;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  position: relative;
+  width: 80px;
+  justify-content: center;
+}
+
 .ico-create {
   background: url('../../images/add.png') no-repeat;
   background-size: contain;
@@ -171,7 +184,7 @@
   top: 50%;
   transform: translateY(-50%);
   width: 500px;
-  height: 200px;
+  min-height: 220px;
 }
 
 .modal-head {
@@ -188,6 +201,7 @@
     font-size: 18px;
     font-weight: bold;
     color: #fff;
+    text-transform: uppercase;
   }
 }
 
@@ -202,7 +216,7 @@
 }
 
 .modal-detail {
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
 .modal-detail-item {
