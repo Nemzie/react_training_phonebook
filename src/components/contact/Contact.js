@@ -52,12 +52,13 @@ class Contact extends Component {
 			case 'delete':
 				cloned.splice(index, 1)
 
-				this.setState({ data: cloned})
+				this.setState({ data: cloned, showModal: false})
 
 				break;
 
+			case 'view':
 			case 'edit':
-
+				console.log("type", type, index);
 				const selected = cloned.filter((item, key) => {
 					return key === index
 				})
@@ -94,7 +95,7 @@ class Contact extends Component {
 	}
 
 	render () {
-		const {name, number, eventType} = this.state;
+		const {name, number, eventType, showModal, activeIndex} = this.state;
 		return (
 			<div className="contact">
         <ContactToolbar
@@ -109,7 +110,8 @@ class Contact extends Component {
 					number = {number}
 					handleInput={this.handleInput}
           handleClick = { this.handleClick }
-          showModal = { this.state.showModal }
+          showModal = { showModal }
+					activeIndex = { activeIndex }
         />
       </div>
 		)
