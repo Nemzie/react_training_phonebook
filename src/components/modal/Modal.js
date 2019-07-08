@@ -33,7 +33,7 @@ class Modal extends Component {
             </div>
             {
               eventType !== 'view'
-              ? <div className="btn btn-save" onClick={(e) => handleClick(eventType === 'edit'? 'update' : eventType)}>
+              ? <div className="btn btn-save" onClick={(e) => handleClick(eventType === 'edit'? 'update' : 'create')}>
                 <span>{eventType === 'edit'? 'update' : 'save'}</span>
               </div> : null
             }
